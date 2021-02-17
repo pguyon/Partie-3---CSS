@@ -1,0 +1,20 @@
+b {
+    border: 3px dashed red;
+    display: inline-block;
+    /* La hauteur sera active uniquement sur les diplays block et inline-block */
+    height: 30px;
+    width: 300px;
+}
+
+span {
+    background: rgb(131, 44, 58);
+    color: white;
+}
+
+p {
+    border: 3px solid green;
+}
+
+div {
+    background: lightgrey;
+}
