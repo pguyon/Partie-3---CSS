@@ -1,0 +1,38 @@
+body, div {
+    color: #000000;
+    background-color: lightgrey;
+}
+
+body > div {
+    background-color: rgb(233, 233, 152);
+}
+
+#conteneur p {
+    color: rgb(128, 9, 9);
+}
+
+#conteneur > p {
+    font-weight:bold;
+}
+
+#conteneur h2 + p {
+    color: rgb(7, 80, 7);
+}
+
+h2 + p {
+    text-transform: uppercase;
+}
+
+code + p {
+    color: rgb(155, 105, 113)
+}
+
+h1 + div {
+    border: 3px solid green;
+    /* Possibilité de préciser pour la bordure du bas */
+    border-bottom: 12px solid purple;
+    /* La propriété border est un condensé de ces 3 propriétés */
+/*  border-style: solid;
+    border-color: green;
+    border-width: 1px; */
+}

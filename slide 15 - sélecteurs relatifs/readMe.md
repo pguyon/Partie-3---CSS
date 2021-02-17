@@ -11,7 +11,7 @@ En modifiant/créant les styles CSS et en vous aidant des documentations officie
 
 - couleur du texte de tous les paragraphes du conteneur en rouge
 - police grasse pour les paragraphes directement enfants du conteneur
-- couleur du texte du paragraphe qui suit directement le conteneur en vert
+- couleur du texte du premier paragraphe du conteneur en vert
 - Les paragraphes qui suivent directement un titre de niveau 2 en majuscule
 - Les paragraphes qui suivent un élément code ET ayant le même niveau que cet élément en rose
 
