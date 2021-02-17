@@ -1,0 +1,32 @@
+div {
+    width: 500px;
+    background: lightgreen;
+}
+
+h2 {
+    width: 400px;
+    background: yellow;
+    border: 2px solid orange;
+}
+
+.para1, .para2 {
+    width: 500px;
+    border-width: 3px;
+    border-style: dashed;
+}
+
+.para1 {
+    background-color: peru;
+    border-color: orange;
+    padding: 15px;
+}
+
+.para2 {
+    background-color: pink;
+    border-color: purple;
+    margin: 15px;
+}
+
+.box {
+    box-sizing: border-box;
+}
