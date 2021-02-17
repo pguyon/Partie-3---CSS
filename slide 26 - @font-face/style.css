@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Police cursive";
+    src: url('./font/MaSuperPolice.ttf') format("truetype");
+}
+
+h1 {
+    font-family: "Police cursive", cursive;
+    font-size: 3rem;
+}
