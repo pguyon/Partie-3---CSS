@@ -1,0 +1,43 @@
+/* ####################
+PSEUDO-CLASSES
+#################### */
+
+a {
+    color: pink;
+}
+
+a:hover {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+a:visited {
+    color: rgb(128, 83, 90);
+}
+
+p:hover {
+    background-color: rgb(202, 122, 122);
+}
+
+/* ####################
+PSEUDO-ELEMENTS
+#################### */
+
+/* Lettrine */
+p::first-letter {
+    font-size: 1.8rem;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background-image: url("https://bitsofco.de/content/images/2017/03/icon_256.png");
+    background-size: cover;
+}
