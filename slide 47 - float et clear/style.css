@@ -1,20 +1,20 @@
 #div1 {
     border: solid red;
     background-color: lightcoral;
-    /* float: left; */
+    float: left;
 }
 
 #div2 {
     border: solid blue;
     background-color: lightblue;
     /* clear: both; */
-    /* float: right; */
+    float: right;
 }
 
 h4 {
     /* float: left; */
     margin: 0;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 
@@ -23,7 +23,7 @@ h4 {
     height: 60px;
     background: purple;
     margin: 20px;
-    /* float: right; */
+    float: right;
 }
 
 .clear {

@@ -1,7 +1,7 @@
 div {
     width: 15rem;
     height: 7rem;
-    margin: 0;
+    margin: 0 auto;
 }
 
 hr {
@@ -20,6 +20,7 @@ hr {
     overflow: hidden;
     background-color: lightgreen;
     border: solid green;
+    margin: 0 auto;
 }
 
 .conteneur3 {
