@@ -88,7 +88,7 @@ section#ref #container > div {
     max-width: 300px;
     margin-right: 3rem;
     min-height: 400px;
-    background: red;
+    /* background: red; */
 }
 
 section#ref #container > div:last-child {

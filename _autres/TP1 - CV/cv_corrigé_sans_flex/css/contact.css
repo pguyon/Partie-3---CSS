@@ -1,0 +1,217 @@
+/* --- HEADER --- */
+
+header.header-short {
+  margin-top: 2rem;
+  padding: 1.5rem 1rem .5rem 1rem;
+  height: 100px;
+  position: relative;
+  background-position-y: -150px ;
+}
+
+/* TOP FIXE*/
+
+header.header-short #top{
+  height: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-size: .8rem;
+  line-height: 2rem;
+  padding: 0 .5rem;
+}
+
+#top div:first-child {
+  display: inline-block;
+}
+
+#top a {
+  color: var(--light);
+}
+#top a:hover {
+  text-decoration: underline;
+}
+
+/* Sprites */
+#social {
+  float: right;
+}
+
+#social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* box-shadow: 3px 3px 15px rgba(109, 109, 109, 0.9); */
+  margin: 0 6px 0 0;
+  padding: 0;
+  border: none;
+  background-image: url('../img/social-sprite-32x32.png');
+  transition: background-position .15s ease-out;
+  box-sizing: content-box;
+  color: transparent;
+}
+
+#social a:last-child {
+  margin-right: 0;
+}
+
+#social .facebook {
+  background-position: left 0 bottom 0;
+}
+#social .twitter {
+  background-position: right -64px bottom 0;
+}
+#social .youtube {
+  background-position: right 0 bottom 0;
+}
+#social .linkedin {
+  background-position: left -128px bottom 0;
+}
+
+#social .facebook:hover {
+  background-position: left 0 bottom -32px;
+}
+#social .twitter:hover {
+  background-position: right -64px bottom -32px;
+}
+#social .youtube:hover {
+  background-position: right 0 bottom -32px;
+}
+#social .linkedin:hover {
+  background-position: left -128px bottom -32px;
+}
+
+header.header-short #logo {
+  float: left;
+}
+
+header.header-short #logo img, header.header-short #logo h1 {
+  float: left;
+}
+
+header.header-short #logo img {
+  width: 64px;
+  margin-right: .5rem;
+}
+
+/* Navbar */
+header.header-short nav {
+  float: right;
+  margin-top: 2rem;
+}
+
+header.header-short nav ul{
+  margin-top : .35rem;
+  margin-bottom : .35rem;
+  padding: .3rem 1rem;
+}
+
+
+/* --- SECTION CONTACT --- */
+#contact {
+  text-align-last: left;
+  max-width: 50%;
+}
+
+#contact p {
+  text-indent: none;
+}
+
+#contact ul li {
+  list-style: none;
+}
+
+
+/* --- SECTION MAPS --- */
+#contact-map {
+  width: 100%;
+  margin: 0;
+  padding: 0!important;
+}
+
+#contact-map iframe {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: 2px 2px 15px grey;
+}
+
+/* --- SECTION CONTACT FORM --- */
+#contact-form #form-container{
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-form #form-container .display-1{
+  background: var(--blue);
+  padding: .35rem ;
+  text-align: center;
+  color: white;
+}
+
+#contact-form #form-container form{
+  padding: 1rem;
+}
+
+#contact-form #form-container form .section{
+  color: var(--blue);
+  font-family: var(--font-headings);
+  font-size: 1.6rem;
+  margin-bottom: 2.3rem;
+}
+
+#contact-form #form-container form .section span{
+  background-color: var(--blue);
+  color: white;
+  border-radius: 50%;
+  margin-right: .5rem;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: .5rem;
+  text-align: center;
+  line-height: 1.6rem;
+  /* FIXME : Centrer le contenu */
+}
+
+
+#contact-form #form-container form .inner-wrap {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#contact-form #form-container form input, #contact-form #form-container form label, #contact-form #form-container form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  min-height: 2rem;
+  margin-bottom: .5rem;
+}
+
+#contact-form #form-container form input[type="submit"], #contact-form #form-container form input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  cursor:pointer;
+}
+
+#contact-form #form-container form .privacy-policy {
+  float: right;
+  font-size: .7rem;
+  line-height: 2rem;
+  height: 2rem;
+  display: inline-block;
+  padding: 0;
+}
+
+#contact-form #form-container form input[type="checkbox"] {
+  margin: 0 .3rem!important;
+  padding: 0;
+  position: relative;
+  top: .7rem;
+}
+
+

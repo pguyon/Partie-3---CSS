@@ -8,3 +8,8 @@
     background: var(--dark);
     color: var(--light);
 }
+
+.bg-black {
+  background: black;
+  color: var(--light);
+}
