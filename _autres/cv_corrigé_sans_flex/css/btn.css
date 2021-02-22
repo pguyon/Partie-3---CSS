@@ -1,0 +1,17 @@
+/* ------ BUTTONS ------ */
+.btn {
+    display: inline-block;
+    padding: .8rem 1.1rem;
+    border-radius: .4rem;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn.blue{
+    background: var(--blue);
+    color:var(--light);
+}
+
+.btn.blue:hover {
+    color:var(--light);
+    background: var(--darkblue);
+}

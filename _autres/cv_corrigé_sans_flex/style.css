@@ -1,0 +1,14 @@
+/* Import des feuilles de styles */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+@import "css/variables.css";
+@import "css/bg-color.css";
+@import "css/text-format.css";
+@import "css/btn.css";
+@import "css/bloc.css";
+
+
+

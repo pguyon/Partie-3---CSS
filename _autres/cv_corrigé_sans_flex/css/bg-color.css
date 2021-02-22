@@ -1,0 +1,10 @@
+/* ---------- BACKGROUND COLORS ---------- */
+.bg-light {
+    background: rgb(233, 233, 233);
+    color :  var(--dark);
+}
+
+.bg-dark {
+    background: var(--dark);
+    color: var(--light);
+}

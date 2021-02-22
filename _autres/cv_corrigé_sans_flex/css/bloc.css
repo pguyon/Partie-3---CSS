@@ -1,0 +1,111 @@
+
+/* ------ BLOCS ------ */
+
+/* -- HEADER -- */
+header {
+    background-image: url("../img/bg-header.jpg");
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+/* logo */
+header #logo img {
+    border: 1px solid var(--light);
+    padding: 3px;
+    background: var(--dark);
+}
+
+/* navbar */
+header nav {
+    display: inline-block;
+    background: var(--light);
+    color:var(--dark);
+    border-radius: 3px;
+}
+
+header nav ul {
+    padding: .3rem 3rem;
+}
+
+header nav ul a {
+    color: inherit;
+}
+
+header nav ul a:hover {
+    color: var(--darkblue)!important;
+}
+
+header nav ul a li {
+    display: inline-block;
+}
+
+/* -- SECTION GENERALITES -- */
+section {
+    padding: 2rem 3rem 7rem 3rem!important;
+    margin: 0;
+}
+
+section > h1 {
+    margin-bottom: 0.8rem;
+}
+
+section > hr {
+    margin-bottom: 3rem;
+}
+
+/* -- SECTION WELCOME -- */
+/* section#welcome {
+} */
+
+/* -- SECTION COMPETENCES -- */
+section#competence > div {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    min-height: 128px;
+}
+
+section#competence > div img{
+    float: left;
+    margin-right: .6rem;
+}
+
+section#competence > div div{
+    text-align: left;
+}
+section#competence > div div h2{
+    margin-top: 0;;
+}
+
+/* -- SECTION REFERENCE -- */
+section#ref #container > div {
+    display: inline-block;
+    max-width: 300px;
+}
+
+section#ref #container > div {
+    display: inline-block;
+    max-width: 300px;
+    margin-right: 3rem;
+    min-height: 400px;
+    background: red;
+}
+
+section#ref #container > div:last-child {
+    margin-right: 0;
+}
+
+section#ref #container > div > div figure {
+    margin: 0;
+}
+
+section#ref #container > div > div p {
+    font-style: italic;
+}
+
+/* -- FOOTER -- */
+footer {
+    font-size: .8rem;
+    height: 3rem;
+    line-height: 3rem;
+}

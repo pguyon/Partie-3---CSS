@@ -1,0 +1,9 @@
+/* ------ VARIABLES ------ */
+:root {
+    --font : 'Open Sans', sans-serif;
+    --font-headings : 'Abel', sans-serif;
+    --dark : rgb(37, 37, 37);
+    --light : lightgrey;
+    --blue : #7e98a7;
+    --darkblue : #5e7481;
+}
