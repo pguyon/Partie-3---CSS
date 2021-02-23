@@ -1,0 +1,24 @@
+/* ICONES */
+.icon {
+  display: inline-block;
+  border: 3px solid var(--yellow);
+  /* padding: 1rem; */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.icon.basket {
+ background-image: url('../img/icons/icon-basket.png');
+}
+.icon.laptop {
+ background-image: url('../img/icons/icon-laptop.png');
+}
+.icon.locked {
+ background-image: url('../img/icons/icon-locked.png');
+ background-size: 40%;
+ background-position: 48% 40%;
+}

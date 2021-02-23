@@ -1,0 +1,450 @@
+/* ### IMPORT RESET CSS ### */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/* ### IMPORT FONTS ### */
+@font-face {
+  font-family: 'Wisdom Script';
+  src: url('./font/WisdomScriptAJ.woff');
+}
+
+@font-face {
+  font-family: 'Droid serif';
+  src: url('./font/DroidSerif.ttf');
+}
+
+@font-face {
+  font-family: 'Droid serif';
+  font-style: italic;
+  src: url('./font/DroidSerif-Italic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* ### VARIABLES ### */
+:root {
+  /*  --- FONTS ---- */
+  /* Font du logo */
+  --font-logo: 'Wisdom Script', cursive;
+  /* Font pour les titres de sections, les titres des boites, les boutons et le menu */
+  --font-title: 'Montserrat', sans-serif;
+  /* Font pour les sous-titres des menus et les sous-titre des boites*/
+  --font-subtitle: 'Droid serif', sans-serif;
+  /* Font pour les description des boites */
+  --font-description: 'Roboto Slab', serif;
+
+  /* --- COLORS --- */
+  --yellow: #fed136;
+  --black: #222222;
+  --grey: #c0c0c0;
+  --darkgrey: #b3b3b3;
+  --bg-grey: #f7f7f7;
+  --bg-dark: #222222;
+
+}
+
+/* ###############################
+      TEXT SETTINGS
+ ############################### */
+body {
+  text-align: center;
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+}
+
+/* ###############################
+      BUTTON
+ ############################### */
+ .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 3px;
+ }
+
+ .btn.btn-yellow {
+   color: white;
+   background: var(--yellow);
+
+ }
+
+ /* ###############################
+      SPECIAL CLASSES : 
+      Colors and container
+ ############################### */
+.bg-grey {
+  background-color: var(--bg-grey);
+}
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5%;
+  max-width: 900px;
+  margin-right: auto ;
+  margin-left: auto ;
+}
+
+.container-flex > div {
+  width: 30%;
+  margin-right: 5% ;
+  margin-bottom: 3rem;
+}
+
+.container-flex > div:nth-child(3),
+.container-flex > div:nth-child(6),
+.container-flex > div:nth-child(9) {
+  margin-right: 0 ;
+}
+
+.container-flex > div h3 {
+  margin-bottom: 0.1rem;
+}
+
+.container-flex > div p {
+  font-family: var(--font-subtitle);
+  color: var(--darkgrey);
+  font-style: italic;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+ /* ###############################
+      ICONS
+ ############################### */
+.icon {
+  display: inline-block;
+  border: 3px solid var(--yellow);
+  /* padding: 1rem; */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.icon.basket {
+ background-image: url('../img/icons/icon-basket.png');
+}
+.icon.laptop {
+ background-image: url('../img/icons/icon-laptop.png');
+}
+.icon.locked {
+ background-image: url('../img/icons/icon-locked.png');
+ background-size: 40%;
+ background-position: 50% 40%;
+}
+
+/* ###############################
+      SOCIAL
+ ############################### */
+
+ .social a {
+  display: inline-block;
+  border: 2px solid var(--black) ;
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+ }
+
+ .social a.fb {
+   background-image: url('./img/icons/facebook-black.png');
+   background-size: 30%;
+ }
+ .social a.tw {
+   background-image: url('./img/icons/twitter-black.png');
+ }
+ .social a.pt {
+   background-image: url('./img/icons/pinterest-black.png');
+   background-size: 40%;
+ }
+ .social a.gp {
+   background-image: url('./img/icons/google+-black.png');
+ }
+
+
+
+/* ###############################
+      HEADER
+ ############################### */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+  line-height: 3rem;
+}
+/* TITLE */
+header h1 {
+  font-family: var(--font-logo);
+  color: var(--yellow);
+  margin: 0;
+}
+/* NAVBAR */
+nav {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+}
+
+nav ul a:hover {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+nav ul a:last-child {
+  margin-right: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* ###############################
+      SECTIONS
+ ############################### */
+
+ /* GLOBAL */
+ section {
+   padding: 4rem 2rem;
+ }
+
+ section h2 {
+  font-family: var(--font-title);
+  color: var(--black);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+section p {
+  font-family: var(--font-subtitle);
+  color: var(--darkgrey);
+  font-size: 1rem;
+}
+
+section h2 + p{
+  margin: 0 0 3rem 0;
+  font-style: italic;
+}
+
+section h3 {
+  font-family: var(--font-subtitle);
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 1rem;;
+}
+
+
+/* HOME */
+section#home {
+  background-image: linear-gradient(to top, rgba(0,0,0,.4),rgba(0,0,0,.4)), url("./img/bg_header.png");
+  /* background-image:  url("./img/bg_header.png"); */
+  background-size: cover;
+  color: white;
+  /* position: relative; */
+  padding-top: 0.5rem;
+  padding-bottom: 8rem;
+}
+
+section#home h3 {
+  margin-top: 8rem;
+  font-family: var(--font-subtitle);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: inherit;
+}
+
+section#home h2 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 2.5rem;
+}
+
+/* SERVICES */
+
+section#services h3 {
+  margin-bottom: 1.2rem;
+}
+
+
+/* PORTFOLIO */
+
+/* TODO => put the overlay in absolut position and the parent node in relative  */
+
+.card {
+  /* position: relative;*/
+  background-color: white;
+  /* width: 100%; */
+  padding: 0;
+}
+
+.card-illustration {
+  /* top: 0;
+  left: 0; */
+  /* object-fit: cover; */
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.overlay {
+  display: none;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--yellow);
+  width: 256px;
+  height: 256px;
+  text-align: center;
+  line-height: 256px;
+}
+
+.overlay span {
+  border: 1px solid var(--yellow);
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+/* TEAM */
+
+section#team .team-portrait {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+section#team .team-portrait img{
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+
+section#team .container-flex > p {
+  font-style: normal;
+}
+
+
+/* PARTER */
+section#partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom : 3rem;
+}
+
+section#partner img {
+  margin-right: 2rem;
+}
+
+section#partner img:last-child {
+  margin-right: 0;
+}
+
+/* CONTACT */
+section#contact h2 {
+  color: white;
+}
+
+section#contact .container-flex{
+  min-height: 10rem;
+  margin-bottom: 3rem;
+}
+
+section#contact .container-flex div{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding: 0;
+  margin: 0 .5rem 0 0;
+}
+
+section#contact .container-flex .form-left{
+  margin: 0 1rem 0 0;
+}
+
+section#contact .container-flex input, section#contact .container-flex textarea{
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: 3px;
+  border : none;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: var(--grey);
+}
+
+section#contact .container-flex input{
+  height: 2.5rem;
+}
+
+section#contact .container-flex textarea {
+  height: 100%;
+}
+
+section#contact input[type="submit"] {
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  height: 4rem;
+  line-height: 4rem;
+  text-align: left;
+  position: relative;
+  padding: 0 2rem;
+}
+
+footer > span {
+  display: inline-block;
+  line-height: 4rem;
+}
+
+footer .social {
+  height: 4rem;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  margin-left: -150px;
+}
+
+footer .social span{
+  display: none;
+}

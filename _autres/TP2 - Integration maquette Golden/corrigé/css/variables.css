@@ -1,0 +1,46 @@
+/* ### IMPORT RESET CSS ### */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* ### IMPORT FONTS ### */
+@font-face {
+  font-family: 'Wisdom Script';
+  src: url('../font/WisdomScriptAJ.woff');
+}
+@font-face {
+  font-family: 'Droid serif';
+  font-style: italic;
+  src: url('../font/DroidSerif-Italic.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* ### VARIABLES ### */
+:root {
+  /*  --- FONTS ---- */
+  /* Font du logo */
+  --font-logo : 'Wisdom Script', cursive;
+  /* Font pour les titres de sections, les titres des boites, les boutons et le menu */
+  --font-title : 'Montserrat', sans-serif;
+  /* Font pour les sous-titres des menus et les sous-titre des boites*/
+  --font-subtitle : 'Droid serif', sans-serif;
+  /* Font pour les description des boites */
+  --font-description : 'Roboto Slab', serif;
+
+  /* --- COLORS --- */
+  --yellow : #fed136;
+  --black : #222222;
+  --grey : #c0c0c0;
+  --bg-grey : #f7f7f7;
+  --bg-dark: #222222;
+
+}
+
+/* ###############################
+      TEXTE SETTINGS
+ ############################### */
+
+ .icon {
+   display: block;
+   border: 1px solid var(--yellow);
+   width: 64px;
+ }
